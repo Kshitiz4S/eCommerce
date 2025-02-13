@@ -23,9 +23,9 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-          context: .
-          push: true
-          tags: kshitiz182/ecomm-app:${GITHUB_SHA}
+        context: .
+        push: true
+        tags: kshitiz182/ecomm-app:${GITHUB_SHA}
 
     - name: Set up Go
       uses: actions/setup-go@v4
